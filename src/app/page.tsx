@@ -1,3 +1,4 @@
+import Footer from "@/components/sections/Footer/page";
 import Header from "@/components/sections/Header/Header";
 import VerticalTilesWrapper from "@/components/VerticleTilesWrapper";
 import dynamic from "next/dynamic";
@@ -9,6 +10,7 @@ export default function Home() {
       <VerticalTilesWrapper>
         <Header />
         <LandingContent />
+        <Footer />
       </VerticalTilesWrapper>
     </div>
   );

@@ -10,8 +10,8 @@ export default function Home({ id }: { id: string }) {
   return (
     <main id={id}>
       <BackgroundVideo>
-        <div className="absolute top-[20rem] md:top-[30rem] left-1/2 -translate-x-1/2 -translate-y-1/2 ">
-          <div className="absolute inset-5 md:inset-12 bg-white blur-[30px] md:blur-[20px] opacity-80 md:opacity-40 rounded-full"></div>
+        <div className="absolute top-[20rem] md:top-[26rem] left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+          <div className="absolute inset-5 md:inset-10 bg-white blur-[30px] md:blur-[20px] opacity-80 md:opacity-30 rounded-full"></div>
           <img
             className="relative max-w-[80vw] md:max-w-[40vw] "
             src="/images/LOGO.webp"
@@ -19,8 +19,8 @@ export default function Home({ id }: { id: string }) {
           />
         </div>
         <Link href={"#events"}>
-          <RainbowButton className="text-lg md:text-2xl font-bold px-3 py-2 rounded-md absolute bottom-[18rem] md:bottom-[7rem] left-1/2 -translate-x-1/2 z-[99]">
-            View Events
+          <RainbowButton className="text-lg md:text-2xl font-bold px-3 py-2 rounded-md absolute bottom-[18rem] md:bottom-[6rem] left-1/2 -translate-x-1/2 z-[99]">
+            Register Now!
           </RainbowButton>
         </Link>
         <div className="hidden md:block w-[20%] absolute bottom-2 left-[5rem] ">

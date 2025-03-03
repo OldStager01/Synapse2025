@@ -57,7 +57,8 @@ export default function App() {
   ];
 
   return (
-    <div className={`w-full ${isAnimating ? "hidden" : ""}`}>
+    // <div className={`w-full z-[99] ${isAnimating ? "hidden" : ""}`}>
+    <div className={`w-full z-[99] `}>
       <Navbar
         disableAnimation
         isBordered

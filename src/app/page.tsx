@@ -7,11 +7,11 @@ const LandingContent = dynamic(() => import("./LandingContent"), { ssr: true });
 export default function Home() {
   return (
     <div className="w-full">
-      <VerticalTilesWrapper>
-        <Header />
-        <LandingContent />
-        <Footer />
-      </VerticalTilesWrapper>
+      {/* <VerticalTilesWrapper> */}
+      <Header />
+      <LandingContent />
+      <Footer />
+      {/* </VerticalTilesWrapper> */}
     </div>
   );
 }

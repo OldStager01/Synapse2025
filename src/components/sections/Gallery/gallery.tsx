@@ -51,7 +51,7 @@ const galleryItems = [
   },
 ];
 
-export default function ThreeDGalleryPage() {
+export default function Gallery() {
   return (
     <main className="min-h-screen bg-black text-white">
       <div className="container mx-auto px-4 py-16">
@@ -61,7 +61,7 @@ export default function ThreeDGalleryPage() {
             <span className="absolute -bottom-2 left-0 w-full h-1 bg-red-600"></span>
           </span>
         </h1>
-        <p className="text-xl text-center text-gray-300 max-w-3xl mx-auto mb-16">
+        <p className="text-xl text-center text-gray-300 max-w-3xl mx-auto">
           Experience our events in an immersive 3D environment inspired by
           Marvel's cinematic universe
         </p>

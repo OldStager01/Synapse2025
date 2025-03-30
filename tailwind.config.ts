@@ -1,13 +1,20 @@
 import { heroui } from "@heroui/react";
+import type { Config } from "tailwindcss";
+
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
-/** @type {import('tailwindcss').Config} */
-
-function addVariablesForColors({ addBase, theme }) {
+/** Function to add CSS variables for colors */
+function addVariablesForColors({
+  addBase,
+  theme,
+}: {
+  addBase: any;
+  theme: any;
+}) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
@@ -18,7 +25,7 @@ function addVariablesForColors({ addBase, theme }) {
   });
 }
 
-module.exports = {
+const config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx,js,jsx,mdx}",
@@ -28,7 +35,15 @@ module.exports = {
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
     "*.{js,ts,jsx,tsx,mdx}",
   ],
+  prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -83,8 +98,9 @@ module.exports = {
             medium: "#a08a3c",
             dark: "#7a6a2c",
           },
-          red: "#ED1D24",
-          blue: "#13C2C2",
+          red: "#E23636",
+          blue: "#518CCA",
+          black: "#151515",
           purple: "#5E17EB",
         },
       },
@@ -95,24 +111,20 @@ module.exports = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0" },
         },
         shimmer: {
           "0%": { backgroundPosition: "0% 0%" },
           "100%": { backgroundPosition: "200% 0%" },
         },
         rainbow: {
-          "0%": {
-            "background-position": "0%",
-          },
-          "100%": {
-            "background-position": "200%",
-          },
+          "0%": { "background-position": "0%" },
+          "100%": { "background-position": "200%" },
         },
       },
       animation: {
@@ -124,4 +136,6 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate"), heroui(), addVariablesForColors],
-};
+} satisfies Config;
+
+export default config;

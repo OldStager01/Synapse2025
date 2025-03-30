@@ -8,7 +8,7 @@ import Sponsors from "@/components/sponsers/Sponsers";
 
 export default function Home({ id }: { id: string }) {
   return (
-    <main id={id}>
+    <section id={id}>
       <BackgroundVideo>
         <div className="absolute top-[20rem] md:top-[26rem] left-1/2 -translate-x-1/2 -translate-y-1/2 ">
           <div className="absolute inset-5 md:inset-10 bg-white blur-[30px] md:blur-[20px] opacity-80 md:opacity-30 rounded-full"></div>
@@ -36,6 +36,6 @@ export default function Home({ id }: { id: string }) {
         </div>
         <TerminalAnimation className="scale-90 bg-black text-white" />
       </div>
-    </main>
+    </section>
   );
 }

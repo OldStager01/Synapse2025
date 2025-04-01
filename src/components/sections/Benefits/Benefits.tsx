@@ -3,10 +3,10 @@
 import type React from "react";
 
 import { useEffect, useRef } from "react";
-import { Shield, Award, Globe, Users, Medal } from "lucide-react";
+import { Shield, Award, Globe, Users, Medal, IndianRupee } from "lucide-react";
 import BenefitCard from "./BenefitCard";
 
-export default function Benefits() {
+export default function Benefits({ id }: { id: string }) {
   const benefitsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -44,6 +44,13 @@ export default function Benefits() {
     },
     {
       id: 2,
+      title: "TITAN'S BOUNTY",
+      description: "A grand cash prize for overall event winners.",
+      icon: <IndianRupee className="h-10 w-10 text-green-500" />,
+      color: "red",
+    },
+    {
+      id: 3,
       title: "HEROIC EXPERIENCE",
       description:
         "Step into the battlefield of knowledge and gain real-world skills.",
@@ -51,7 +58,7 @@ export default function Benefits() {
       color: "red",
     },
     {
-      id: 3,
+      id: 4,
       title: "MULTIVERSE EXPOSURE",
       description:
         "Make your mark across universes (or industries!) with top-tier visibility.",
@@ -59,7 +66,7 @@ export default function Benefits() {
       color: "blue",
     },
     {
-      id: 4,
+      id: 5,
       title: "POWERFUL NETWORKING",
       description:
         "Build your own superhero squad with experts and fellow participants.",
@@ -67,7 +74,7 @@ export default function Benefits() {
       color: "purple",
     },
     {
-      id: 5,
+      id: 6,
       title: "ULTIMATE RECOGNITION",
       description:
         "Become a legend with exclusive prizes and awards worthy of an Avenger.",
@@ -78,6 +85,7 @@ export default function Benefits() {
 
   return (
     <section
+      id={id}
       className="relative w-full py-16 overflow-hidden text-white mt-20"
       ref={benefitsRef}
     >

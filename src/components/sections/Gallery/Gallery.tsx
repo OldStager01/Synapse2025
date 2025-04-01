@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useMemo } from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import { events, Event } from "./data";
-export default function Gallery() {
+export default function Gallery({ id }: { id: string }) {
   const cards = useMemo(
     () =>
       events?.map((event: Event, index) => {
@@ -14,7 +14,7 @@ export default function Gallery() {
   );
 
   return (
-    <div className="w-[100vw] h-full py-20">
+    <div id={id} className="w-[100vw] h-full py-20">
       <div className="text-center mb-8">
         <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 uppercase relative inline-block">
           <span className="relative z-10 text-yellow-400">
@@ -23,8 +23,8 @@ export default function Gallery() {
           <span className="absolute -bottom-1 left-0 right-0 h-3 bg-gradient-to-r from-red-500 via-amber-500 to-blue-500 opacity-70 blur-sm"></span>
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          Join our event and unlock powers that will transform your college
-          experience and future career!
+          Relive the legacy of MIBCS – a journey through epic moments and
+          unforgettable events!
         </p>
       </div>
       <Carousel items={cards} />

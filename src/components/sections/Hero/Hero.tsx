@@ -9,7 +9,7 @@ export default function Home({ id }: { id: string }) {
   return (
     <section
       id={id}
-      className="relative w-full flex flex-col items-center text-white"
+      className="relative w-[100vw] flex flex-col items-center text-white"
     >
       <div className="relative w-full flex flex-col items-center h-[80vh] justify-center">
         <BackgroundVideo />
@@ -25,9 +25,9 @@ export default function Home({ id }: { id: string }) {
       </div>
 
       {/* Register Button */}
-      <div className="mt-10 md:mt-16 flex flex-col items-center w-full">
-        <Link href={"#events"}>
-          <RainbowButton className="text-lg md:text-2xl font-bold px-3 py-2 rounded-md">
+      <div className="mt-2 md:mt-12 flex flex-col items-center w-full">
+        <Link href={"#events"} className="mb-5">
+          <RainbowButton className=" text-lg md:text-2xl font-bold px-3 py-2 rounded-md">
             Register Now!
           </RainbowButton>
         </Link>
@@ -45,17 +45,18 @@ export default function Home({ id }: { id: string }) {
           className="max-w-2xl"
           titleComponent={
             <>
-              <h1 className="text-4xl font-semibold text-black dark:text-white">
+              <h1 className="text-4xl font-semibold text-yellow-400">
                 Unleash the power <br />
                 <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                  KKWIEER ASSEMBLE
+                  <span className="text-white">KKWIEER</span>{" "}
+                  <span className="text-red-500">ASSEMBLE</span>
                 </span>
               </h1>
             </>
           }
         >
           <Image
-            src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEaZ0cEe12P9R3qzANnB3LTzQj2zEGtOePQ&s`}
+            src={`/images/assemble.webp`}
             alt="hero"
             height={720}
             width={1400}

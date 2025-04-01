@@ -38,9 +38,9 @@ export default function LandingContent() {
         {/* <Header /> */}
         <Hero id="home" />
         <Events id="events" />
-        <Benefits />
-        <Gallery />
-        <TeamMarquee />
+        <Benefits id="benefits" />
+        <Gallery id="gallery" />
+        <TeamMarquee id="team" />
         <FAQ id="faq" />
       </motion.div>
     </AnimatePresence>

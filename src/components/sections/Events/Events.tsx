@@ -4,7 +4,7 @@ import events from "./eventsData";
 
 export default function Events({ id }: { id: string }) {
   return (
-    <div id={id} className="text-white mt-20">
+    <div id={id} className="text-white mt-5">
       <div className="text-center">
         {/* <SectionHeading>Events</SectionHeading> */}
         <div className="text-center mb-12">
@@ -13,8 +13,8 @@ export default function Events({ id }: { id: string }) {
             <span className="absolute -bottom-1 left-0 right-0 h-3 bg-gradient-to-r from-red-500 via-amber-500 to-blue-500 opacity-70 blur-sm"></span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Join our event and unlock powers that will transform your college
-            experience and future career!
+            Step into the MIBCS portal, where every event is a new quest, and
+            every hero has the chance to rise to legendary status!
           </p>
         </div>
       </div>

@@ -43,6 +43,10 @@ export default function NavbarComponent() {
       href: "#events",
     },
     {
+      title: "Gallery",
+      href: "#gallery",
+    },
+    {
       title: "Team",
       href: "#team",
     },
@@ -61,8 +65,7 @@ export default function NavbarComponent() {
     <div className={`w-full z-[99]`}>
       <Navbar
         disableAnimation
-        isBordered
-        className="bg-transparent"
+        className="bg-transparent pt-1"
         maxWidth="lg"
         position="sticky"
       >

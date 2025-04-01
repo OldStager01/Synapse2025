@@ -9,17 +9,17 @@ import {
 } from "./data";
 import MemberCard from "./MemberCard";
 
-export default function TeamMarquee() {
+export default function TeamMarquee({ id }: { id: string }) {
   return (
-    <div className="w-[100vw] mt-28">
+    <div id={id} className="w-[100vw] mt-28">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 uppercase relative inline-block">
           <span className="relative z-10 text-yellow-400">TEAM</span>
           <span className="absolute -bottom-1 left-0 right-0 h-3 bg-gradient-to-r from-red-500 via-amber-500 to-blue-500 opacity-70 blur-sm"></span>
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          Join our event and unlock powers that will transform your college
-          experience and future career!
+          Meet the Avengers of MIBCS, a team of passionate innovators and
+          dedicated heroes, working together to bring excellence to every event
         </p>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center md:gap-16">

@@ -22,55 +22,57 @@ export default function FAQ({ id }: { id: string }) {
             {/* <!-- FAQ Items --> */}
             <div className="text-white p-4 rounded-lg shadow-md marvel-box">
               <h3 className="font-bold text-lg marvel-title glow">
-                What types of events do you organize?
+                What is SYNAPSE?
               </h3>
               <p>
-                We organize hackathons, pitching competitions, tech meetups,
-                workshops, and club activities related to AI, ML, cybersecurity,
-                and interdisciplinary projects.
+                <b>SYNAPSE</b> is the flagship event of MIBCS, featuring a mix
+                of technical, creative, and innovation-driven competitions. It's
+                a platform where participants can showcase their skills,
+                collaborate with peers, and gain recognition in various domains.
               </p>
             </div>
 
             <div className="text-white p-4 rounded-lg shadow-md marvel-box">
               <h3 className="font-bold text-lg marvel-title glow">
-                Who can participate in these events?
+                When are the event dates?
               </h3>
               <p>
-                Our events are open to students, tech enthusiasts, and
-                professionals, depending on the event type. Some may have
-                specific eligibility criteria.
+                The MIBCS SYNAPSE event will be held on{" "}
+                <b>7th and 8th April 2025</b>.
               </p>
             </div>
 
             <div className="text-white p-4 rounded-lg shadow-md marvel-box">
               <h3 className="font-bold text-lg marvel-title glow">
-                How can I register for an event?
+                What is the registration fee?
               </h3>
               <p>
-                You can register through our website, official social media
-                pages, or the event registration link shared in our community
-                groups.
+                The registration fee is <b>₹50</b> per member, and teams can
+                consist of
+                <b> up to 3 members</b>.
               </p>
             </div>
 
             <div className="text-white p-4 rounded-lg shadow-md marvel-box">
               <h3 className="font-bold text-lg marvel-title glow">
-                Are there any participation fees?
+                Can I participate in multiple events?
               </h3>
               <p>
-                Most of our events are free, but some may require a nominal fee
-                to cover logistics. Check the specific event details for more
-                information.
+                Yes, It is encouraged to participate in multiple events!
+                Additionally, if you participate in <b>4</b> events, you will
+                get
+                <b> one extra event for free</b>.
               </p>
             </div>
 
             <div className="text-white p-4 rounded-lg shadow-md marvel-box">
               <h3 className="font-bold text-lg marvel-title glow">
-                Do I need prior experience to participate in hackathons?
+                How can I stay updated with MIBCS news and updates?
               </h3>
               <p>
-                Not necessarily! Beginners are welcome. We often have mentorship
-                sessions to help participants get started.
+                To stay updated with all MIBCS events and announcements, join
+                our <b>WhatsApp community</b> and follow us on <b>Instagram</b>.
+                We continuously share updates and event details there.
               </p>
             </div>
           </div>

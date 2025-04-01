@@ -26,7 +26,7 @@ export const MIBCSLogo = () => {
   );
 };
 
-export default function App() {
+export default function NavbarComponent() {
   const { isAnimating } = useApp();
   type navItemType = {
     title: string;
@@ -58,7 +58,7 @@ export default function App() {
 
   return (
     // <div className={`w-full z-[99] ${isAnimating ? "hidden" : ""}`}>
-    <div className={`w-full z-[99] `}>
+    <div className={`w-full z-[99]`}>
       <Navbar
         disableAnimation
         isBordered

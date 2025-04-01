@@ -1,12 +1,8 @@
-export default function BackgroundVideo({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function BackgroundVideo() {
   return (
-    <div className="relative w-screen mt-5 overflow-hidden">
+    <div className="absolute top-0 w-screen mt-10 h-[80vh] overflow-hidden">
       <video
-        className="absolute top-0 left-0 w-full mt-[10vh] md:mt-0 md:h-[80vh] object-contain"
+        className="absolute top-0 w-full h-full object-contain"
         autoPlay
         muted
         loop
@@ -16,7 +12,6 @@ export default function BackgroundVideo({
         <source src="/videos/output.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
-      <div className="relative h-screen z-10 text-white">{children}</div>
     </div>
   );
 }

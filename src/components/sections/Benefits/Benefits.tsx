@@ -78,16 +78,14 @@ export default function Benefits() {
 
   return (
     <section
-      className="relative w-full py-16 overflow-hidden text-white"
+      className="relative w-full py-16 overflow-hidden text-white mt-20"
       ref={benefitsRef}
     >
       {/* Grainy texture overlay */}
       <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,')]"></div>
-
-      {/* Decorative elements */}
+      {/* Decorative elements
       <div className="absolute -top-24 -left-24 w-64 h-64 bg-red-500/10 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-32 -right-32 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
-
+      <div className="absolute -bottom-32 -right-32 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div> */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 uppercase relative inline-block">
@@ -95,12 +93,12 @@ export default function Benefits() {
             <span className="absolute -bottom-1 left-0 right-0 h-3 bg-gradient-to-r from-red-500 via-amber-500 to-blue-500 opacity-70 blur-sm"></span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Join our event and unlock powers that will transform your college
-            experience and future career!
+            Heroes in action, rewards in motion – unlock your SYNAPSE 2K25
+            perks!
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center items-stretch gap-6 md:gap-8">
+        <div className="flex flex-wrap justify-center items-stretch gap-8 md:gap-20">
           {benefits.map((benefit) => (
             <div
               key={benefit.id}

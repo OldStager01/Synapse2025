@@ -22,17 +22,17 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <div
-      className={cn("rounded-lg bg-red-500", {
+      className={cn("rounded-lg", {
         "border-b-2 border-b-red-500": index === activeIndex,
       })}
       onClick={onTabClick}
     >
       <div
         className={cn(
-          "flex h-10 cursor-pointer items-center justify-center rounded-md border-2 bg-white p-3 transition-all",
+          "flex h-10 cursor-pointer items-center justify-center rounded-md border-b-2 p-3 transition-all",
           {
-            "border-2 border-red-500 text-red-700": index === activeIndex,
-            "origin-top-right text-black ease-in hover:rotate-6":
+            "border-b-2 border-red-700 text-red-500": index === activeIndex,
+            "origin-top-right text-white border-gray-500 ease-in hover:rotate-6":
               index !== activeIndex,
           }
         )}

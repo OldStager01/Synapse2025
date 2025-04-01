@@ -1,11 +1,8 @@
 import "./styles.css";
 export default function FAQ({ id }: { id: string }) {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div
-        id={id}
-        className="w-[95%] flex items-center justify-center my-[10rem]"
-      >
+    <div className="flex flex-col items-center justify-center mt-20">
+      <div id={id} className="w-[95%] flex items-center justify-center my-10">
         <div className="tilted-container flex items-start gap-6 p-6 marvel-box rounded-lg w-full max-w-3xl">
           {/* <!-- Vertical Marvel-Styled FAQ Heading --> */}
           <div

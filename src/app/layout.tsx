@@ -28,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} bg-black`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} bg-black overflow-hidden`}
+      >
         <AppProvider>
           <div className="relative">
             {children} {/* Main Page */}

@@ -3,9 +3,12 @@ import ParticleBackground from "@/components/ParticleBackground";
 import Benefits from "@/components/sections/Benefits/Benefits";
 import Events from "@/components/sections/Events/Events";
 import FAQ from "@/components/sections/FAQ/FAQ";
-import Gallery from "@/components/sections/Gallery/gallery";
-import MarvelCarousel from "@/components/sections/Gallery/marvel-carousel";
+// import Gallery from "@/components/sections/Gallery/gallery";
+// import MarvelCarousel from "@/components/sections/Gallery/marvel-carousel";
+import Gallery from "@/components/sections/Gallery/Gallery";
 import Hero from "@/components/sections/Hero/Hero";
+// import TeamMembers from "@/components/sections     /Team/Team";
+import TeamMarquee from "@/components/sections/Team/TeamMarquee";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { useTheme } from "@/lib/theme";
 // Import framer-motion
@@ -36,7 +39,8 @@ export default function LandingContent() {
         <Hero id="home" />
         <Events id="events" />
         <Benefits />
-        <MarvelCarousel />
+        <Gallery />
+        <TeamMarquee />
         <FAQ id="faq" />
       </motion.div>
     </AnimatePresence>

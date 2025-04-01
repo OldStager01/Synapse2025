@@ -4,7 +4,7 @@ import events from "./eventsData";
 
 export default function Events({ id }: { id: string }) {
   return (
-    <div id={id} className="text-white">
+    <div id={id} className="text-white mt-20">
       <div className="text-center">
         {/* <SectionHeading>Events</SectionHeading> */}
         <div className="text-center mb-12">
@@ -18,11 +18,11 @@ export default function Events({ id }: { id: string }) {
           </p>
         </div>
       </div>
-      <div className="mt-10 flex flex-wrap justify-evenly gap-12 px-8 md:px-0">
+      <div className="mt-10 flex flex-wrap justify-evenly gap-10 px-8 md:gap-y-24">
         {events.map((event, index) => (
           <div
             key={index}
-            className="w-full max-w-sm sm:w-1/2 md:w-1/3 flex justify-center mt-10 overflow-visible"
+            className="w-full max-w-md sm:w-1/2 md:w-1/3 flex justify-center mt-10 overflow-visible"
           >
             <EventCard
               title={event.title}

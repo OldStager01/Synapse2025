@@ -5,16 +5,17 @@ import VerticalTilesWrapper from "@/components/VerticleTilesWrapper";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
-const LandingContent = dynamic(() => import("./LandingContent"), { ssr: true });
+// const LandingContent = dynamic(() => import("./LandingContent"), { ssr: true });
+import LandingContent from "./LandingContent";
 export default function Home() {
   return (
     <div className="w-full">
       {/* <VerticalTilesWrapper> */}
-      <Header />
       {/* <Suspense fallback={<Preloader onComplete={() => {}} />}> */}
-      <LandingContent />
+      <Suspense>
+        <LandingContent />
+      </Suspense>
       {/* </Suspense> */}
-      <Footer />
       {/* </VerticalTilesWrapper> */}
     </div>
   );

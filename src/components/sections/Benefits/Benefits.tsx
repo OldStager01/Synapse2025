@@ -47,7 +47,7 @@ export default function Benefits({ id }: { id: string }) {
       title: "TITAN'S BOUNTY",
       description: "A grand cash prize for overall event winners.",
       icon: <IndianRupee className="h-10 w-10 text-green-500" />,
-      color: "red",
+      color: "green",
     },
     {
       id: 3,
@@ -97,7 +97,9 @@ export default function Benefits({ id }: { id: string }) {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 uppercase relative inline-block">
-            <span className="relative z-10">Superhero Benefits</span>
+            <span className="relative z-10 text-yellow-400">
+              Superhero Benefits
+            </span>
             <span className="absolute -bottom-1 left-0 right-0 h-3 bg-gradient-to-r from-red-500 via-amber-500 to-blue-500 opacity-70 blur-sm"></span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">

@@ -8,7 +8,7 @@ export default function Footer() {
           {/* <!-- Brand & Social Media --> */}
           <div>
             <img
-              src="/path-to-your-logo.png"
+              src="/images/LOGO.webp"
               alt="MIBCS Logo"
               className="w-20 mb-3"
             />

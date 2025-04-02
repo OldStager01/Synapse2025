@@ -416,10 +416,7 @@ function MemberCard({
             {member.name}
           </h3>
           <p className="text-sm text-gray-300 mb-4">{member.position}</p>
-          <div className="text-xs text-center text-gray-400">
-            <p className="mb-2">Tap card to flip back</p>
-            <p>Member bio and details would go here.</p>
-          </div>
+          <div className="text-xs text-center text-gray-400"></div>
         </div>
       </div>
     </div>

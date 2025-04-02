@@ -31,7 +31,8 @@ export const Button = ({
         className={cn(
           "flex h-10 cursor-pointer items-center justify-center rounded-md border-b-2 p-3 transition-all",
           {
-            "border-b-2 border-red-700 text-red-500": index === activeIndex,
+            "bg-gradient-to-t from-red-500 to-transparent text-white font-bold border-b-2 border-red-500":
+              index === activeIndex,
             "origin-top-right text-white border-gray-500 ease-in hover:rotate-6":
               index !== activeIndex,
           }

@@ -21,6 +21,8 @@ function BenefitCard({ benefit, className }: BenefitProps) {
         return "from-blue-500/70 to-blue-500/0";
       case "purple":
         return "from-purple-500/70 to-purple-500/0";
+      case "green":
+        return "from-green-500/70 to-green-500/0";
       default:
         return "from-amber-500/70 to-amber-500/0";
     }

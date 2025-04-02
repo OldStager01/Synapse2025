@@ -11,27 +11,27 @@ export default function Home({ id }: { id: string }) {
       id={id}
       className="relative w-[100vw] flex flex-col items-center text-white"
     >
-      <div className="relative w-full flex flex-col items-center h-[80vh] justify-center">
+      <div className="relative w-full h-[100vh] flex flex-col items-center justify-center">
         <BackgroundVideo />
         {/* Hero Content */}
-        <div className="relative top-24">
-          {/* <div className="absolute inset-5 md:inset-10 bg-white blur-[30px] md:blur-[20px] opacity-20 md:opacity-15 rounded-full"></div> */}
+        {/* <div className="relative top-48">
           <img
             className="relative max-w-[80vw] md:max-w-[40vw]"
             src="/images/LOGO.webp"
             alt="Logo"
           />
-        </div>
+        </div> */}
+        <Link href={"#events"}>
+          <div className="absolute bottom-[20%] md:bottom-[10%] left-1/2 -translate-x-1/2">
+            <RainbowButton className="text-lg md:text-2xl font-bold px-3 py-2 rounded-md">
+              Register Now!
+            </RainbowButton>
+          </div>
+        </Link>
       </div>
 
       {/* Register Button */}
       <div className="mt-2 md:mt-12 flex flex-col items-center w-full">
-        <Link href={"#events"} className="mb-5">
-          <RainbowButton className=" text-lg md:text-2xl font-bold px-3 py-2 rounded-md">
-            Register Now!
-          </RainbowButton>
-        </Link>
-
         {/* Sponsors & Terminal */}
         {/* <div className="w-full flex justify-between items-center px-10 mt-10">
           <div className="hidden md:block w-[20%]">
@@ -56,7 +56,7 @@ export default function Home({ id }: { id: string }) {
           }
         >
           <Image
-            src={`/images/assemble.webp`}
+            src={`/images/assemble.jpg`}
             alt="hero"
             height={720}
             width={1400}

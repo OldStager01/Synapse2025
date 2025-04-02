@@ -7,80 +7,70 @@ export type TeamMember = {
 const president: TeamMember = {
   name: "Devansh Dubey",
   position: "President",
-  image: "/images/team/Devansh Dubey.PNG",
+  image: "/images/team/DevanshDube.jpeg",
 };
 
 const vicePresident: TeamMember = {
   name: "Chinmay Kotkar",
   position: "Vice President",
-  image: "/images/team/Chinmay Kotkar.PNG",
+  image: "/images/team/ChinmayKotka.jpeg",
 };
 
 const seniorCommittee: TeamMember[] = [
   {
     name: "Pratik Joshi",
     position: "Secretary",
-    image: "/images/team/Pratik Joshi.PNG",
+    image: "/images/team/PratikJosh.jpeg",
   },
-
   {
     name: "Vedika Yadav",
     position: "Joint Secretary",
-    image: "/images/team/Vedika Yadav.PNG",
+    image: "/images/team/VedikaYada.jpeg",
   },
-
   {
     name: "Oceania Kshetrimayum",
     position: "Event Head",
-    image: "/images/team/Oceania Kshetrimayum.PNG",
+    image: "/images/team/OceaniaKshetrimayu.jpeg",
   },
-
   {
     name: "Tanmay Tambat",
     position: "Technical Head",
-    image: "/images/team/Tanmay Tambat.PNG",
+    image: "/images/team/TanmayTamba.jpeg",
   },
-
   {
     name: "Harshal Patil",
     position: "Social Media Head",
-    image: "/images/team/Harshal Patil.PNG",
+    image: "/images/team/HarshalPati.jpeg",
   },
-
   {
     name: "Ishan Jawale",
     position: "Treasurer",
-    image: "/images/team/Ishan Jawale.PNG",
+    image: "/images/team/IshanJawal.jpeg",
   },
-
   {
     name: "Vinisha Dsouza",
     position: "Co-Treasurer",
-    image: "/images/team/Vinisha Dsouza.PNG",
+    image: "/images/team/VinishaDsouz.jpeg",
   },
-
   {
     name: "Sakshi Malpure",
     position: "Creative Head",
-    image: "/images/team/Sakshi Malpure.PNG",
+    image: "/images/team/SakshiMalpur.jpeg",
   },
-
   {
     name: "Snehal Thombare",
     position: "Co-Creative Head",
-    image: "/images/team/Snehal Thombare.PNG",
+    image: "/images/team/SnehalThombar.jpeg",
   },
-
   {
     name: "Anjas Vaidya",
     position: "Marketing Head",
-    image: "/images/team/Anjas Vaidya.PNG",
+    image: "/images/team/AnjasVaidy.jpeg",
   },
-
   {
     name: "Prasad Patil",
     position: "Outreach Co-ordinator",
-    image: "/images/team/Prasad Patil.PNG",
+    image: "/images/team/PrasadPati.jpeg",
   },
 ];
 
@@ -88,121 +78,102 @@ const juniorCommittee: TeamMember[] = [
   {
     name: "Aditi Bakshi",
     position: "Core Committee",
-    image: "/images/team/Aditi Bakshi.PNG",
+    image: "/images/team/AditiBaksh.jpeg",
   },
-
   {
     name: "Akshada Khairnar",
     position: "Core Committee",
-    image: "/images/team/Akshada Khairnar.PNG",
+    image: "/images/team/AkshadaKhairna.jpeg",
   },
-
   {
     name: "Ankit Khandelwal",
     position: "Core Committee",
-    image: "/images/team/Ankit Khandelwal.PNG",
+    image: "/images/team/AnkitKhandelwa.jpeg",
   },
-
   {
     name: "Anup Patil",
     position: "Core Committee",
-    image: "/images/team/Anup Patil.PNG",
+    image: "/images/team/AnupPati.jpeg",
   },
-
   {
     name: "Atharva Sonawane",
     position: "Core Committee",
-    image: "/images/team/Atharva Sonawane.PNG",
+    image: "/images/team/AtharvaSonawan.jpeg",
   },
-
   {
     name: "Chintan Mehta",
     position: "Core Committee",
-    image: "/images/team/Chintan Mehta.PNG",
+    image: "/images/team/ChintanMeht.jpeg",
   },
-
   {
     name: "Duvya Bhavsar",
     position: "Core Committee",
-    image: "/images/team/Divya Bhavsar.PNG",
+    image: "/images/team/DivyaBhavsa.jpeg",
   },
-
   {
     name: "Gayatri Duse",
     position: "Core Committee",
-    image: "/images/team/Gayatri Duse.PNG",
+    image: "/images/team/GayatriDus.jpeg",
   },
-
   {
     name: "Harsh Patil",
     position: "Core Committee",
-    image: "/images/team/Harsh Patil.PNG",
+    image: "/images/team/HarshPati.jpeg",
   },
-
   {
     name: "Kedar Sonavani",
     position: "Core Committee",
-    image: "/images/team/Kedar Sonavani.PNG",
+    image: "/images/team/KedarSonavan.jpeg",
   },
-
   {
     name: "Khushi Nanote",
     position: "Core Committee",
-    image: "/images/team/Khushi Nanote.PNG",
+    image: "/images/team/KhushiNanot.jpeg",
   },
-
   {
     name: "Rohit Chitkesiwar",
     position: "Core Committee",
-    image: "/images/team/Rohit Chitkesiwar.PNG",
+    image: "/images/team/RohitChitkesiwa.jpeg",
   },
-
   {
     name: "Sanket Belekar",
     position: "Core Committee",
-    image: "/images/team/Sanket Belekar.PNG",
+    image: "/images/team/SanketBeleka.jpeg",
   },
-
   {
     name: "Shravani Beni",
     position: "Core Committee",
-    image: "/images/team/Shravani Beni.PNG",
+    image: "/images/team/ShravaniBen.jpeg",
   },
-
   {
     name: "Shreyash Saitwal",
     position: "Core Committee",
-    image: "/images/team/Shreyash Saitwal.PNG",
+    image: "/images/team/ShreyashSaitwa.jpeg",
   },
-
   {
     name: "Snehal Sanap",
     position: "Core Committee",
-    image: "/images/team/Snehal Sanap.PNG",
+    image: "/images/team/SnehalSana.jpeg",
   },
-
   {
     name: "Tanishka Nikam",
     position: "Core Committee",
-    image: "/images/team/Tanishka Nikam.PNG",
+    image: "/images/team/TanishkaNika.jpeg",
   },
-
   {
     name: "Naman Verma",
     position: "Core Committee",
-    image: "/images/team/Naman Verma.PNG",
+    image: "/images/team/NamanVerm.jpeg",
   },
-
   {
     name: "Sahil Patil",
     position: "Core Committee",
-    image: "/images/team/Sahil Patil.PNG",
+    image: "/images/team/SahilPati.jpeg",
   },
-
   {
     name: "Shrey Salunke",
     position: "Core Committee",
-    image: "/images/team/Shrey Salunke.PNG",
+    image: "/images/team/ShreySalunk.jpeg",
   },
 ];
 

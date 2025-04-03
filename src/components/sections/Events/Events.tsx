@@ -1,4 +1,3 @@
-import SectionHeading from "@/components/SectionHeading";
 import EventCard from "@/components/ui/event-card";
 import events from "./eventsData";
 

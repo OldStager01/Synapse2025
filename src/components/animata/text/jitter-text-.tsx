@@ -10,12 +10,8 @@ interface JitteryTextProps {
   className?: string;
 }
 
-export default function JitterText({
-  text,
-  duration,
-  className,
-}: JitteryTextProps) {
-  const animationDuration: number = 0.6 || duration;
+export default function JitterText({ text, className }: JitteryTextProps) {
+  const animationDuration: number = 0.6;
   return (
     <div>
       <motion.span

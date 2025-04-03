@@ -12,7 +12,6 @@ export default function Gallery({ id }: { id: string }) {
       }),
     []
   );
-
   return (
     <div id={id} className="w-[100vw] h-full py-20">
       <div className="text-center mb-8">
@@ -31,10 +30,10 @@ export default function Gallery({ id }: { id: string }) {
     </div>
   );
 }
-const EventModal = ({ event }: { event: any }) => {
+const EventModal = ({ event }: { event: Event }) => {
   if (!event) return null;
 
-  const items = event.subEvents.map((subEvent: any, index: number) => {
+  const items = event.subEvents.map((subEvent, index: number) => {
     const imageCarousel = subEvent.img.map((imgSrc: string, i: number) => (
       <div key={i} className="h-[300px] w-[200px] flex justify-center">
         <Image

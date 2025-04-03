@@ -1,5 +1,4 @@
 "use client";
-import { useApp } from "@/context/useApp";
 import {
   Navbar,
   NavbarBrand,
@@ -7,11 +6,8 @@ import {
   NavbarMenu,
   NavbarContent,
   NavbarItem,
-  Link,
 } from "@heroui/react";
-import ShiftTabs, {
-  Button as ShiftButton,
-} from "./animata/container/shift-tabs";
+import ShiftTabs from "./animata/container/shift-tabs";
 
 export const MIBCSLogo = () => {
   return (
@@ -26,12 +22,16 @@ export const MIBCSLogo = () => {
     // <div className="text-2xl font-bold text-white bg-red-500 px-2 py-1 font-bold">
     //   MIBCS
     // </div>
-    <img src="/images/LOGO.webp" alt="MIBCS Logo" className="w-24 mb-3 mt-3" />
+    <img
+      src="/images/LOGO.webp"
+      alt="MIBCS Logo"
+      className="w-24 mb-3 mt-3 object-contain"
+    />
   );
 };
 
 export default function NavbarComponent() {
-  const { isAnimating } = useApp();
+  // const { isAnimating } = useApp();
   type navItemType = {
     title: string;
     href: string;
@@ -98,9 +98,13 @@ export default function NavbarComponent() {
               <img
                 src="/images/MIBCSSymbol.png"
                 alt="KKW Logo"
-                className="w-14"
+                className="w-14 object-contain"
               />
-              <img src="/images/KKWLogo.png" alt="KKW Logo" className="w-20" />
+              <img
+                src="/images/KKWLogo.png"
+                alt="KKW Logo"
+                className="w-20 object-contain"
+              />
             </div>
           </NavbarItem>
         </NavbarContent>

@@ -1,8 +1,6 @@
 import BackgroundVideo from "@/components/sections/Hero/BackgroundVideo";
-import TerminalAnimation from "./Terminal";
 import Link from "next/link";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
-import Sponsors from "@/components/sponsers/Sponsers";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
 export default function Home({ id }: { id: string }) {

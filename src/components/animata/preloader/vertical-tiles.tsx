@@ -35,7 +35,7 @@ export default function VerticalTiles({
   const { isAnimating, setIsAnimating } = useApp();
   const calculateTiles = useCallback(() => {
     if (containerRef.current) {
-      const { offsetWidth: width, offsetHeight: _ } = containerRef.current;
+      const { offsetWidth: width } = containerRef.current;
       const tileCount = Math.max(3, Math.floor(width / minTileWidth));
       const tileWidth = width / tileCount + 1;
 

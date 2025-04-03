@@ -11,7 +11,7 @@ interface Module {
 
 const HolographicInterface: React.FC = () => {
   const [modules, setModules] = useState<Module[]>([]);
-  const [particles, setParticles] = useState<any>([]);
+  const [particles, setParticles] = useState<React.JSX.Element[]>([]);
 
   useEffect(() => {
     // Generate modules
@@ -29,7 +29,7 @@ const HolographicInterface: React.FC = () => {
     setModules(generatedModules);
 
     // Generate particles
-    const generatedParticles: any = [];
+    const generatedParticles: React.JSX.Element[] = [];
     for (let i = 0; i < 20; i++) {
       const size = Math.random() * 3 + 1;
       const animationDuration = Math.random() * 4 + 2;

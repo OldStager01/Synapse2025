@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Zap } from "lucide-react";
 
 const CircuitLines: React.FC = () => {
-  const [paths, setPaths] = useState<any>([]);
+  const [paths, setPaths] = useState<React.JSX.Element[]>([]);
 
   useEffect(() => {
-    const generatedPaths: any = [];
+    const generatedPaths = [];
     const numPaths = 12;
 
     for (let i = 0; i < numPaths; i++) {
       const delay = i * 0.2;
-      const pathLength = Math.random() * 100 + 100;
+      // const pathLength = Math.random() * 100 + 100;
       const startX = Math.random() * 100;
       const startY = Math.random() * 100;
 

@@ -15,19 +15,20 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { Event } from "../sections/Gallery/data";
 
 interface CarouselProps {
-  items: any;
+  items: React.JSX.Element[];
   initialScroll?: number;
 }
 
-type CardType = {
-  img: string;
-  title: string;
-  year: string | number;
-  subEvents: any[];
-  content?: React.ReactNode;
-};
+// type CardType = {
+//   img: string;
+//   title: string;
+//   year: string | number;
+//   subEvents: any[];
+//   content?: React.ReactNode;
+// };
 
 export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
@@ -109,7 +110,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
               "max-w-7xl mx-auto" // remove max-w-4xl if you want the carousel to span the full width of its container
             )}
           >
-            {items.map((item: any, index: any) => (
+            {items.map((item: any, index) => (
               <motion.div
                 initial={{
                   opacity: 0,
@@ -161,13 +162,13 @@ export const Card = ({
   index,
   layout = false,
 }: {
-  card: CardType;
+  card: Event;
   index: number;
   layout?: boolean;
 }) => {
   const [open, setOpen] = useState(false);
-  const containerRef = useRef(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { onCardClose } = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -186,7 +187,9 @@ export const Card = ({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
-  useOutsideClick(containerRef as any, () => handleClose());
+  useOutsideClick(containerRef as React.RefObject<HTMLDivElement>, () =>
+    handleClose()
+  );
 
   const handleOpen = () => {
     setOpen(true);

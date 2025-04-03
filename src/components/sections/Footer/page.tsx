@@ -19,18 +19,34 @@ export default function Footer() {
               <a
                 href="https://www.linkedin.com/company/mibcs-kkwieer"
                 target="_blank"
-                className="text-white text-xl"
+                rel="noopener noreferrer"
+                className="text-white"
               >
-                <Linkedin />
+                <Linkedin size={24} />
               </a>
-              <a href="#" target="_blank" className="text-white text-xl">
-                <Instagram />
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+              >
+                <Instagram size={24} />
               </a>
-              <a href="#" target="_blank" className="text-white text-xl">
-                <Twitter />
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+              >
+                <Twitter size={24} />
               </a>
-              <a href="#" target="_blank" className="text-white text-xl">
-                <Youtube />
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+              >
+                <Youtube size={24} />
               </a>
             </div>
           </div>

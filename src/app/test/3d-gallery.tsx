@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useRef, useMemo, useEffect } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { useState, useRef, useMemo } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import {
   EffectComposer,
   Bloom,
@@ -296,13 +296,13 @@ function Scene({ items }: { items: GalleryItem[] }) {
   const groupRef = useRef<THREE.Group>(null);
   const startX = useRef(0);
   const deltaX = useRef(0);
-  const { gl } = useThree();
-  const [dpr, setDpr] = useState(1);
+  // const { gl } = useThree();
+  // const [dpr, setDpr] = useState(1);
 
-  useEffect(() => {
-    // Only access window after component mounts
-    setDpr(Math.min(window.devicePixelRatio, 1));
-  }, []);
+  // useEffect(() => {
+  //   // Only access window after component mounts
+  //   setDpr(Math.min(window.devicePixelRatio, 1));
+  // }, []);
 
   useFrame((state) => {
     if (!groupRef.current) return;

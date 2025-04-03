@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 const MatrixCode: React.FC = () => {
-  const [columns, setColumns] = useState<any>([]);
+  const [columns, setColumns] = useState<React.JSX.Element[]>([]);
 
   useEffect(() => {
     const generateColumns = () => {
       const numColumns = Math.floor(window.innerWidth / 20);
-      const generatedColumns: any = [];
+      const generatedColumns: React.JSX.Element[] = [];
 
       for (let i = 0; i < numColumns; i++) {
         const chars = generateRandomChars();

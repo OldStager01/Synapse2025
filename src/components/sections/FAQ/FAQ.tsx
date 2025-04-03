@@ -26,9 +26,10 @@ export default function FAQ({ id }: { id: string }) {
               </h3>
               <p>
                 <b>SYNAPSE</b> is the flagship event of MIBCS, featuring a mix
-                of technical, creative, and innovation-driven competitions. It's
-                a platform where participants can showcase their skills,
-                collaborate with peers, and gain recognition in various domains.
+                of technical, creative, and innovation-driven competitions.
+                It&rsquo;s a platform where participants can showcase their
+                skills, collaborate with peers, and gain recognition in various
+                domains.
               </p>
             </div>
 

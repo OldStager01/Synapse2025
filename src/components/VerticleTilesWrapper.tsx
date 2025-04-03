@@ -5,8 +5,6 @@ import VerticalTiles from "./animata/preloader/vertical-tiles";
 import Loader from "./Loader"; // Import the loader
 
 export default function VerticalTilesWrapper({
-  isAnimating = false,
-  setIsAnimating,
   children,
 }: {
   isAnimating?: boolean;

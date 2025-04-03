@@ -5,7 +5,7 @@ export default function Loader() {
         src="/loader.gif"
         title="loader"
         alt="loader"
-        className="w-auto h-[30%] object-contain"
+        className="w-auto h-[30%]"
       />
     </div>
   );

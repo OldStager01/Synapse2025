@@ -21,8 +21,8 @@ export default function TeamCarousel({
   carouselId,
 }: TeamCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
-  const [isDragging, setIsDragging] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
+  // const [isDragging, setIsDragging] = useState(false);
   const carouselRef = useRef<HTMLDivElement>(null);
   const controls = useAnimation();
   const isMobile = useMobile();
@@ -58,8 +58,8 @@ export default function TeamCarousel({
   return (
     <div
       className="relative overflow-hidden"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      // onMouseEnter={() => setIsHovered(true)}
+      // onMouseLeave={() => setIsHovered(false)}
       ref={carouselRef}
     >
       <motion.div
@@ -68,15 +68,13 @@ export default function TeamCarousel({
         drag="x"
         dragConstraints={{
           left:
-            -(
-              carouselRef.current?.scrollWidth -
-              carouselRef.current?.offsetWidth
-            ) || 0,
+            -(carouselRef.current?.scrollWidth as number) -
+              (carouselRef.current?.offsetWidth as number) || 0,
           right: 0,
         }}
-        onDragStart={() => setIsDragging(true)}
+        // onDragStart={() => setIsDragging(true)}
         onDragEnd={(_, info) => {
-          setIsDragging(false);
+          // setIsDragging(false);
           if (Math.abs(info.offset.x) > 100) {
             if (info.offset.x > 0) {
               handlePrev();

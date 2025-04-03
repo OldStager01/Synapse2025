@@ -7,7 +7,9 @@ import {
 export default function TerminalDemo({ className }: { className?: string }) {
   return (
     <Terminal className={`${className} `}>
-      <TypingAnimation>&gt; git commit -m "Fixed all bugs"</TypingAnimation>
+      <TypingAnimation>
+        &gt; git commit -m &quot;Fixed all bugs&quot;
+      </TypingAnimation>
 
       <AnimatedSpan delay={1500} className="text-red-500">
         <span>🚨 ERROR: Web detected a bug!</span>

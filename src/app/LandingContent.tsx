@@ -12,15 +12,6 @@ import Header from "@/components/sections/Header/Header";
 import Hero from "@/components/sections/Hero/Hero";
 import TeamMarquee from "@/components/sections/Team/TeamMarquee";
 import Loader from "@/components/Loader";
-// import Preloader from "@/components/Preloader/Preloader"; // Import your Preloader component
-
-const Preloader = () => {
-  return (
-    <div className="flex justify-center items-center text-white h-screen">
-      Loading...
-    </div>
-  );
-};
 
 export default function LandingContent() {
   const { theme } = useTheme();

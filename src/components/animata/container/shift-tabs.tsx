@@ -46,7 +46,11 @@ export const Button = ({
   );
 };
 
-export default function ShiftTabs({ items }: { items: any[] }) {
+export default function ShiftTabs({
+  items,
+}: {
+  items: { title: string; href: string }[];
+}) {
   const [activeTab, setActiveTab] = useState(0);
   return (
     <>

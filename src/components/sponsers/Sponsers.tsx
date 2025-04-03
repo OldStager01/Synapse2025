@@ -1,3 +1,4 @@
+import Image from "next/image";
 import JitterText from "../animata/text/jitter-text-";
 import TextBorderAnimation from "../animata/text/text-border-animation";
 
@@ -30,7 +31,7 @@ export default function Sponsors() {
           >
             {/* Sponsor Image with White Border */}
 
-            <img
+            <Image
               src={sponsor.image}
               alt={sponsor.name}
               className="w-full max-w-[6rem] object-contain rounded-lg transition-all duration-300 hover:brightness-125 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]"

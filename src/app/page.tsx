@@ -9,12 +9,10 @@ import { Suspense } from "react";
 import LandingContent from "./LandingContent";
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-[100vw]">
       {/* <VerticalTilesWrapper> */}
       {/* <Suspense fallback={<Preloader onComplete={() => {}} />}> */}
-      <Suspense>
-        <LandingContent />
-      </Suspense>
+      <LandingContent />
       {/* </Suspense> */}
       {/* </VerticalTilesWrapper> */}
     </div>

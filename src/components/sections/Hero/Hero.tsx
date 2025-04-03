@@ -22,7 +22,7 @@ export default function Home({ id }: { id: string }) {
           />
         </div> */}
         <Link href={"#events"}>
-          <div className="absolute bottom-[20%] md:bottom-[10%] left-1/2 -translate-x-1/2">
+          <div className="absolute bottom-[30%] md:bottom-[10%] left-1/2 -translate-x-1/2">
             <RainbowButton className="text-lg md:text-2xl font-bold px-3 py-2 rounded-md">
               Register Now!
             </RainbowButton>
@@ -56,11 +56,11 @@ export default function Home({ id }: { id: string }) {
           }
         >
           <Image
-            src={`/images/assemble.jpg`}
+            src={`/images/assemble.jpeg`}
             alt="hero"
             height={720}
             width={1400}
-            className="mx-auto rounded-2xl object-cover h-full object-left-top"
+            className="mx-auto rounded-2xl object-cover h-full object-center"
             draggable={false}
           />
         </ContainerScroll>

@@ -11,26 +11,31 @@ import Gallery from "@/components/sections/Gallery/Gallery";
 import Header from "@/components/sections/Header/Header";
 import Hero from "@/components/sections/Hero/Hero";
 import TeamMarquee from "@/components/sections/Team/TeamMarquee";
-import Preloader from "@/components/Preloader/Preloader"; // Import your Preloader component
+import Loader from "@/components/Loader";
+// import Preloader from "@/components/Preloader/Preloader"; // Import your Preloader component
+
+const Preloader = () => {
+  return (
+    <div className="flex justify-center items-center text-white h-screen">
+      Loading...
+    </div>
+  );
+};
 
 export default function LandingContent() {
   const { theme } = useTheme();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Ensure user starts at top of page on load
     window.scrollTo(0, 0);
-
-    // Show preloader while theme transitions
-    setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 300); // Match transition duration
+    setLoading(true); // Set loading immediately
+    const timer = setTimeout(() => setLoading(false), 300);
     return () => clearTimeout(timer);
   }, [theme]);
 
   return (
     <>
-      {loading && <Preloader onComplete={() => {}} />}{" "}
-      {/* Show Preloader while transitioning */}
+      {loading && <Loader />} {/* Show Preloader while transitioning */}
       <AnimatePresence mode="wait">
         <motion.div
           key={theme}
@@ -46,6 +51,7 @@ export default function LandingContent() {
           <Hero id="home" />
           <Events id="events" />
           <Benefits id="benefits" />
+          <Gallery id="gallery" />
           <TeamMarquee id="team" />
           <FAQ id="faq" />
         </motion.div>

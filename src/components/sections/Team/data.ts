@@ -76,16 +76,6 @@ const seniorCommittee: TeamMember[] = [
 
 const juniorCommittee: TeamMember[] = [
   {
-    name: "Aditi Bakshi",
-    position: "Core Committee",
-    image: "/images/team/AditiBaksh.jpeg",
-  },
-  {
-    name: "Akshada Khairnar",
-    position: "Core Committee",
-    image: "/images/team/AkshadaKhairna.jpeg",
-  },
-  {
     name: "Ankit Khandelwal",
     position: "Core Committee",
     image: "/images/team/AnkitKhandelwa.jpeg",
@@ -106,7 +96,7 @@ const juniorCommittee: TeamMember[] = [
     image: "/images/team/ChintanMeht.jpeg",
   },
   {
-    name: "Duvya Bhavsar",
+    name: "Divya Bhavsar",
     position: "Core Committee",
     image: "/images/team/DivyaBhavsa.jpeg",
   },
@@ -164,16 +154,6 @@ const juniorCommittee: TeamMember[] = [
     name: "Naman Verma",
     position: "Core Committee",
     image: "/images/team/NamanVerm.jpeg",
-  },
-  {
-    name: "Sahil Patil",
-    position: "Core Committee",
-    image: "/images/team/SahilPati.jpeg",
-  },
-  {
-    name: "Shrey Salunke",
-    position: "Core Committee",
-    image: "/images/team/ShreySalunk.jpeg",
   },
 ];
 

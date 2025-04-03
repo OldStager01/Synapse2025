@@ -30,6 +30,7 @@ export default function Events({ id }: { id: string }) {
               description={event.description}
               imageUrl={event.imageUrl}
               stoneColor={event.stoneColor}
+              registerUrl={event.registerUrl}
             />
           </div>
         ))}

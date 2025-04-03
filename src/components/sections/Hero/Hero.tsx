@@ -47,7 +47,7 @@ export default function Home({ id }: { id: string }) {
                 Unleash the power <br />
                 <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
                   <span className="text-white">KKWIEER</span>{" "}
-                  <span className="text-red-500">ASSEMBLE</span>
+                  <span className="text-red-500">ASSEMBLE!</span>
                 </span>
               </h1>
             </>

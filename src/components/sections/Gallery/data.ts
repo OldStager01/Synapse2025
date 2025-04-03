@@ -59,7 +59,7 @@ export const events: Event[] = [
   },
   {
     title: "Career Compass",
-    year: 2025,
+    year: 2024,
     desc: "Career Compass is an expert talk session featuring placed alumni and the TPO recruiting officer, offering insights, guidance, and real-world experiences to help students navigate their career paths.",
     img: "/images/gallery/c1.jpg",
     subEvents: [
@@ -77,7 +77,7 @@ export const events: Event[] = [
   },
   {
     title: "Hacktober Fest",
-    year: 2025,
+    year: 2024,
     desc: "Hacktober Fest is a hands-on event that provides practical experience with Git and GitHub, helping participants contribute to open-source projects and enhance their version control skills.",
     img: "/images/gallery/h1.jpg",
     subEvents: [

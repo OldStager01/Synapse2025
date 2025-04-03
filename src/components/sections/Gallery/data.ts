@@ -9,7 +9,7 @@ export type Event = {
 
 export const events: Event[] = [
   {
-    title: "Synapse",
+    title: "SYNAPSE",
     year: 2024,
     desc: "Synapse is the flagship tech event of the MIBCS Club, featuring Bid for Code, Blind Coding, Think Tank, Scavenger Hunt, and Brain Wave —a fusion of coding, problem-solving, and tech challenges to ignite innovation.",
     img: "/images/gallery/synapse.jpg",
@@ -76,7 +76,7 @@ export const events: Event[] = [
     ],
   },
   {
-    title: "Hactober Fest",
+    title: "Hacktober Fest",
     year: 2025,
     desc: "Hacktober Fest is a hands-on event that provides practical experience with Git and GitHub, helping participants contribute to open-source projects and enhance their version control skills.",
     img: "/images/gallery/h1.jpg",

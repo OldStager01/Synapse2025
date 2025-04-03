@@ -12,7 +12,7 @@ const events: eventType[] = [
     date: "March 10, 2025",
     description:
       "Code under pressure without seeing your work. A challenge to test your logic and ability to solve problems under time pressure.",
-    imageUrl: "/images/events/blindCoding.jpeg",
+    imageUrl: "/images/events/blindCoding.jpg",
     stoneColor: "#ED1D24", // Reality Stone (red)
     registerUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLSek-MhfmVB9QwLqeB21SNN0UTuj4bGXCJrZY1bLI8SQjj28dg/viewform",

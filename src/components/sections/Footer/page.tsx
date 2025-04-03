@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 export default function Footer() {
   return (
     <footer id="contact" className="bg-black text-white py-10">
@@ -25,28 +25,12 @@ export default function Footer() {
                 <Linkedin size={24} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/mibcs_kkw/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white"
               >
                 <Instagram size={24} />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white"
-              >
-                <Twitter size={24} />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white"
-              >
-                <Youtube size={24} />
               </a>
             </div>
           </div>
